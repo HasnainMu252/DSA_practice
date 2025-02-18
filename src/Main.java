@@ -27,28 +27,21 @@ public class Main {
 
 //        2d Array pracitce
 
-        int[][] array_2d = new int[3][3];
-//
-//        array_2d[0] = new int[]{2,4,4};
-//        array_2d[1] = new int[]{2,4,4};
-//        array_2d[2] = new int[]{2,4,4};
-//
-//
-//inputing of 2d array
-        for(int row = 0 ; row < array_2d.length ; row++)
-            for (int col = 0 ; col <array_2d[0].length;col++)
-                array_2d[row][col] = in.nextInt();
-//output
-     for(int row = 0 ; row < array_2d.length ; row++) {
-         System.out.println("");
-         for (int col = 0; col < array_2d[row].length; col++)
-             System.out.print(array_2d[row][col] + " ");
+        int[][] array_2d = new int[3][3]; // there we initialize the value of each position
 
-     }
 
+////inputing of 2d array
+        for (int row = 0; row < array_2d.length; row++) //it will move vertically on each row
+            for (int col = 0; col < array_2d[0].length; col++) //it will move horizontically on each row
+                array_2d[row][col] = in.nextInt();             // this can set the value on each position
+////output
+        for (int row = 0; row < array_2d.length; row++) {
+            System.out.println(" ");
+            for (int col = 0; col < array_2d[row].length; col++)
+
+                System.out.print(array_2d[row][col] + " ");
+        }
 
     }
-
-
-
 }
+
